@@ -14,6 +14,9 @@ Complete the interactive tutorial.
 _Did you hit any points of frustration, and if so, how could we improve the material to avoid that frustration?_
 
 
+_Points of frustration:_
+My points of frustration were learning to put an output of a command into a file and also piping commands-- overall, _03-redirection_ was the hardest section for me to get through. It was frustrating because it was hard to keep track of all the outputs and all the files, and where I needed to pipe commands. What I think could be helpful is including video tutorials, if they exist, at the end of each section so that there are examples that people can refer to when hitting a roadblock.
+
 ## Problem 1
 
 **20 points**
@@ -23,9 +26,9 @@ Note that in reading this article, you don't need to come up with a script that 
 
 _Write a command here that redirects stdout from `script2.sh` to a file named `stdout.txt` and redirects stderr to a file named `stderr.txt`._
 
-./script2.sh 1> stdout.txt
-./script2.sh 2> stderr.txt
-
+`./script2.sh 1> stdout.txt`
+`./script2.sh 2> stderr.txt`
+One code: `bash ./script2.sh 1> stdout.text 2> stderr.txt`
 
 
 ## Problem 2
@@ -62,3 +65,5 @@ _Write a script that will take all of the JPGs in the current directory, convert
 
 ls *.jpg | parallel convert {} {.}.png
 montage *.png montage.png
+
+(Coohleen's homework02 repository) []
